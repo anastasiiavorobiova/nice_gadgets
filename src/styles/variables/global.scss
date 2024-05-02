@@ -1,7 +1,42 @@
 :root {
 	--font-family-main: Helvetica, sans-serif;
 
-	--font-size-m: 16px;
-	--line-height-m: 24px;
-	--font-m: var(--font-size-m) / var(--line-height-m) var(--font-family-main);
+	--font-size-h1: 48px;
+	--line-height-h1: 56px;
+	--letter-spacing-h1: 0.01em;
+	--font-h1: var(--font-size-h1) / var(--line-height-h1) var(--font-family-main);
+
+	--font-size-h2: 32px;
+	--line-height-h2: 41px;
+	--letter-spacing-h2: 0.01em;
+	--font-h2: var(--font-size-h2) / var(--line-height-h2) var(--font-family-main);
+
+	--font-size-h3: 22px;
+	--line-height-h3: 31px;
+	--font-h3: var(--font-size-h3) / var(--line-height-h3) var(--font-family-main);
+
+	--font-size-h4: 20px;
+	--line-height-h4: 26px;
+	--font-h4: var(--font-size-h4) / var(--line-height-h4) var(--font-family-main);
+
+	--font-size-uppercase: 12px;
+	--line-height-uppercase: 12px;
+	--letter-spacing-uppercase: 0.04em;
+	--font-uppercase: var(--font-size-uppercase) / var(--line-height-uppercase)
+		var(--font-family-main);
+
+	--font-size-button: 14px;
+	--line-height-button: 21px;
+	--font-button: var(--font-size-button) / var(--line-height-button)
+		var(--font-family-main);
+
+	--font-size-small: 12px;
+	--line-height-small: 15px;
+	--font-small: var(--font-size-small) / var(--line-height-small)
+		var(--font-family-main);
+
+	--font-size-body: 14px;
+	--line-height-body: 21px;
+	--font-body: var(--font-size-body) / var(--line-height-body)
+		var(--font-family-main);
 }

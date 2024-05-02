@@ -7,7 +7,7 @@
 @import './themes/rounded-purple.scss';
 
 .app {
-	font: var(--font-m);
-	background: var(--bg-color);
+	font: var(--font-body);
+	background: var(--hover-bg);
 	min-height: 100vh;
 }
