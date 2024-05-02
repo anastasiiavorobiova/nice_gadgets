@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
+import ThemeProvider from './theme/ThemeProvider';
 import App from './App';
 
 const root = ReactDOM.createRoot(
@@ -8,6 +9,8 @@ const root = ReactDOM.createRoot(
 
 root.render(
 	<BrowserRouter>
-		<App />
+		<ThemeProvider>
+			<App />
+		</ThemeProvider>
 	</BrowserRouter>
 );

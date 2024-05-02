@@ -1,0 +1,13 @@
+@import './reset.scss';
+@import './variables/global.scss';
+@import './themes/original.scss';
+@import './themes/dark.scss';
+@import './themes/rounded-blue.scss';
+@import './themes/rounded-orange.scss';
+@import './themes/rounded-purple.scss';
+
+.app {
+	font: var(--font-m);
+	background: var(--bg-color);
+	min-height: 100vh;
+}
