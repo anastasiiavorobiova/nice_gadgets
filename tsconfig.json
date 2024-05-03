@@ -10,12 +10,17 @@
 		// allows using imports in commonJS packages
 		"esModuleInterop": true,
 		// allows making default imports
-		"allowSyntheticDefaultImports": true
+		"allowSyntheticDefaultImports": true,
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["./src/*"]
+		}
 	},
 	"ts-node": {
 		"compilerOptions": {
 			"module": "CommonJS"
 		}
-	}
-	// "baseUrl": "."
+	},
+	"include": ["src", "src/app/types/global.d.ts"],
+	"exclude": ["node_modules", "dist"]
 }
