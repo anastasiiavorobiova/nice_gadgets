@@ -1,6 +1,5 @@
-import { Suspense } from 'react';
-import { Route, Routes, Link } from 'react-router-dom';
-import { CartPage, FavouritesPage, HomePage } from '@/pages';
+import { Link } from 'react-router-dom';
+import { AppRouter } from './providers/router';
 import { useTheme, Theme } from '@/app/providers/ThemeProvider';
 import { classNames } from '@/shared/lib/classNames/classNames';
 
@@ -27,13 +26,7 @@ export const App = () => {
 				<option value={Theme.ORANGE}>Orange</option>
 				<option value={Theme.PURPLE}>Purple</option>
 			</select>
-			<Suspense fallback={<div>Loading..</div>}>
-				<Routes>
-					<Route path="/cart" element={<CartPage />} />
-					<Route path="/favourites" element={<FavouritesPage />} />
-					<Route path="/" element={<HomePage />} />
-				</Routes>
-			</Suspense>
+			<AppRouter />
 		</div>
 	);
 };
