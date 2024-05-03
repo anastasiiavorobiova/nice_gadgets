@@ -1,5 +1,5 @@
-import { CartLazy } from './Cart/CartLazy';
-import { FavouritesLazy } from './Favourites/FavouritesLazy';
-import { HomeLazy } from './Home/HomeLazy';
+import { CartPage } from './Cart';
+import { FavouritesPage } from './Favourites';
+import { HomePage } from './Home';
 
-export { CartLazy, FavouritesLazy, HomeLazy };
+export { CartPage, FavouritesPage, HomePage };

@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
 import { Route, Routes, Link } from 'react-router-dom';
-import { CartLazy, FavouritesLazy, HomeLazy } from '@/pages';
+import { CartPage, FavouritesPage, HomePage } from '@/pages';
 import { useTheme, Theme } from '@/app/providers/ThemeProvider';
 import { classNames } from '@/helpers/classNames/classNames';
 
@@ -29,9 +29,9 @@ export const App = () => {
 			</select>
 			<Suspense fallback={<div>Loading..</div>}>
 				<Routes>
-					<Route path="/cart" element={<CartLazy />} />
-					<Route path="/favourites" element={<FavouritesLazy />} />
-					<Route path="/" element={<HomeLazy />} />
+					<Route path="/cart" element={<CartPage />} />
+					<Route path="/favourites" element={<FavouritesPage />} />
+					<Route path="/" element={<HomePage />} />
 				</Routes>
 			</Suspense>
 		</div>
