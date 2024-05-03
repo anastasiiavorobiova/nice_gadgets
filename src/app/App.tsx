@@ -2,7 +2,7 @@ import { Suspense } from 'react';
 import { Route, Routes, Link } from 'react-router-dom';
 import { CartPage, FavouritesPage, HomePage } from '@/pages';
 import { useTheme, Theme } from '@/app/providers/ThemeProvider';
-import { classNames } from '@/helpers/classNames/classNames';
+import { classNames } from '@/shared/lib/classNames/classNames';
 
 import './styles/index.scss';
 

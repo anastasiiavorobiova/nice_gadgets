@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { Theme, ThemeContext } from './ThemeContext';
-import { themeStorage } from '@/helpers/localStorage/localStorage';
+import { themeStorage } from '@/shared/lib/localStorage/localStorage';
 
 interface UseThemeResult {
 	changeTheme: (theme: Theme) => void;
