@@ -1,5 +1,5 @@
 import { createContext } from 'react';
-import always from '../helpers/always/always';
+import always from '@/helpers/always/always';
 
 export enum Theme {
 	ORIGINAL = 'original',

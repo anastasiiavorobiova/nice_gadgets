@@ -1,11 +1,8 @@
 import { Suspense } from 'react';
 import { Route, Routes, Link } from 'react-router-dom';
-import { CartLazy } from './pages/Cart/CartLazy';
-import { FavouritesLazy } from './pages/Favourites/FavouritesLazy';
-import { HomeLazy } from './pages/Home/HomeLazy';
-import { useTheme } from './theme/useTheme';
-import { Theme } from './theme/ThemeContext';
-import { classNames } from './helpers/classNames/classNames';
+import { CartLazy, FavouritesLazy, HomeLazy } from '@/pages';
+import { useTheme, Theme } from '@/app/providers/ThemeProvider';
+import { classNames } from '@/helpers/classNames/classNames';
 
 import './styles/index.scss';
 
