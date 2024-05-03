@@ -1,4 +1,4 @@
-import { LOCAL_STORAGE_THEME_KEY } from '../theme/ThemeContext';
+import { LOCAL_STORAGE_THEME_KEY } from '../../theme/ThemeContext';
 
 const _ls = (key: string) => {
 	return {

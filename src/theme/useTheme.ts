@@ -1,6 +1,6 @@
-import { useContext, useEffect } from 'react';
-import { Theme, ThemeContext, LOCAL_STORAGE_THEME_KEY } from './ThemeContext';
-import { themeStorage } from '../utils/localStorage';
+import { useContext } from 'react';
+import { Theme, ThemeContext } from './ThemeContext';
+import { themeStorage } from '../helpers/localStorage/localStorage';
 
 interface UseThemeResult {
 	changeTheme: (theme: Theme) => void;

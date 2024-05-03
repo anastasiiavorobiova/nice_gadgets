@@ -1,6 +1,6 @@
-import { FC, ReactNode, useEffect, useMemo, useState } from 'react';
+import { FC, ReactNode, useMemo, useState } from 'react';
 import { Theme, ThemeContext } from './ThemeContext';
-import { themeStorage } from '../utils/localStorage';
+import { themeStorage } from '../helpers/localStorage/localStorage';
 
 const choosenTheme = themeStorage.get() || Theme.ORIGINAL;
 

@@ -1,5 +1,5 @@
 import { createContext } from 'react';
-import { EMPTY_FUNC } from '../utils/always';
+import always from '../helpers/always/always';
 
 export enum Theme {
 	ORIGINAL = 'original',
@@ -16,7 +16,7 @@ export interface ThemeContextProps {
 
 export const ThemeContext = createContext<ThemeContextProps>({
 	theme: Theme.ORIGINAL,
-	setTheme: EMPTY_FUNC,
+	setTheme: always.EMPTY_FUNC,
 });
 
 export const LOCAL_STORAGE_THEME_KEY = 'theme';
