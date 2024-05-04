@@ -1,8 +1,9 @@
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { FC } from 'react';
-import AppLink, { AppLinkTheme } from '@/shared/ui/AppLink/AppLink';
+import AppLink from '@/shared/ui/AppLink/AppLink';
 import Logo, { LogoTheme } from '@/shared/ui/Logo/Logo';
 import { useTheme, Theme } from '@/app/providers/ThemeProvider';
+import { ThemeSwitcher } from '@/widgets/ThemeSwitcher';
 import CartIcon from '@/shared/assets/icons/Cart.svg';
 import CartIconDark from '@/shared/assets/icons/Cart-dark.svg';
 import FavouritesIcon from '@/shared/assets/icons/Favourites.svg';
@@ -25,11 +26,13 @@ export const Navbar: FC<NavbarProps> = ({ className }) => {
 					<AppLink to={'/'}>Home</AppLink>
 					<AppLink to={'/category'}>Category</AppLink>
 				</div>
-				<div>
-					<AppLink to={'/cart'} theme={AppLinkTheme.ICON}>
+				<div className={cls.Main}>
+					{/* <MenuIcon/> */}
+					<ThemeSwitcher className={cls.icon} />
+					<AppLink to={'/cart'} className={cls.icon}>
 						{theme === Theme.DARK ? <CartIconDark /> : <CartIcon />}
 					</AppLink>
-					<AppLink to={'/favourites'} theme={AppLinkTheme.ICON}>
+					<AppLink to={'/favourites'} className={cls.icon}>
 						{theme === Theme.DARK ? <FavouritesIconDark /> : <FavouritesIcon />}
 					</AppLink>
 				</div>

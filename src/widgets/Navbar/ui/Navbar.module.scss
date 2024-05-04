@@ -16,3 +16,14 @@
 	gap: 32px;
 	margin: 0 24px;
 }
+
+.Main {
+	display: flex;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	padding: 0 24px;
+	border-left: 1px solid var(--elements);
+}
