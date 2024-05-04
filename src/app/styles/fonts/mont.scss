@@ -1,0 +1,32 @@
+@font-face {
+	font-family: 'Mont';
+	font-weight: 700;
+	src: url('@/shared/assets/fonts/Mont/Mont-Bold.eot');
+	src: url('@/shared/assets/fonts/Mont/Mont-Bold.eot')
+			format('embedded-opentype'),
+		url('@/shared/assets/fonts/Mont/Mont-Bold.woff2') format('woff2'),
+		url('@/shared/assets/fonts/Mont/Mont-Bold.woff') format('woff'),
+		url('@/shared/assets/fonts/Mont/Mont-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Mont';
+	font-weight: 600;
+	src: url('@/shared/assets/fonts/Mont/Mont-SemiBold.eot');
+	src: url('@/shared/assets/fonts/Mont/Mont-SemiBold.eot')
+			format('embedded-opentype'),
+		url('@/shared/assets/fonts/Mont/Mont-SemiBold.woff2') format('woff2'),
+		url('@/shared/assets/fonts/Mont/Mont-SemiBold.woff') format('woff'),
+		url('@/shared/assets/fonts/Mont/Mont-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Mont';
+	font-weight: 400;
+	src: url('@/shared/assets/fonts/Mont/Mont-Regular.eot');
+	src: url('@/shared/assets/fonts/Mont/Mont-Regular.eot')
+			format('embedded-opentype'),
+		url('@/shared/assets/fonts/Mont/Mont-Regular.woff2') format('woff2'),
+		url('@/shared/assets/fonts/Mont/Mont-Regular.woff') format('woff'),
+		url('@/shared/assets/fonts/Mont/Mont-Regular.ttf') format('truetype');
+}
