@@ -1,7 +1,18 @@
 .Navbar {
 	height: var(--navbar-height);
-	margin: 0 12px;
-	display: inline-flex;
+	display: flex;
 	align-items: center;
+	box-shadow: 0px 1px 0px 0px var(--elements);
+}
+
+.NavLinks {
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+}
+
+.Shop {
+	display: flex;
 	gap: 32px;
+	margin: 0 24px;
 }
