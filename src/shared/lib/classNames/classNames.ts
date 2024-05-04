@@ -1,4 +1,4 @@
-import always from '../always/always';
+import always from '@/shared/lib/always/always';
 
 export function classNames(
 	cls: string = '',
@@ -11,6 +11,7 @@ export function classNames(
 			.filter(([_, value]) => Boolean(value))
 			.map(([className]) => className.trim()),
 		additional
+			.filter(Boolean)
 			.map((className) => className.trim())
 			.join(' ')
 			.trim(),

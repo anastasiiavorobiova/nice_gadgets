@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
 import { AppRouter } from './providers/router';
 import { useTheme, Theme } from '@/app/providers/ThemeProvider';
+import { Navbar } from '@/widgets/Navbar';
 import { classNames } from '@/shared/lib/classNames/classNames';
 
 import './styles/index.scss';
@@ -14,11 +14,7 @@ export const App = () => {
 
 	return (
 		<div className={classNames('app', {}, [theme])}>
-			<div>
-				<Link to={'/'}>Home</Link>
-				<Link to={'/cart'}>Cart</Link>
-				<Link to={'/favourites'}>Favourites</Link>
-			</div>
+			<Navbar />
 			<select name="theme" id="theme" onChange={setNewTheme} value={theme}>
 				<option value={Theme.ORIGINAL}>Original</option>
 				<option value={Theme.DARK}>Dark</option>

@@ -1,0 +1,32 @@
+.AppLink {
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	height: var(--navbar-height);
+	text-decoration: none;
+	font: var(--font-uppercase);
+	text-transform: uppercase;
+	font-weight: 800;
+	color: var(--secondary);
+	transition: all 300ms;
+
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		min-width: 0%;
+		height: 3px;
+		transition: all 300ms;
+		background-color: var(--active-nav-link);
+	}
+}
+
+.AppLink.active {
+	color: var(--active-nav-link);
+
+	&:after {
+		min-width: 100%;
+	}
+}
