@@ -16,19 +16,15 @@ export const ThemeSwitcher: FC<ThemeSwitcher> = ({ className }) => {
 	};
 
 	return (
-		<select
-			name="theme"
-			id="theme"
-			onChange={setNewTheme}
-			value={theme}
-			className={classNames(cls.ThemeSwitcher, {}, [className])}
-		>
-			<option value={Theme.ORIGINAL}>Original</option>
-			<option value={Theme.DARK}>Dark</option>
-			<option value={Theme.BLUE}>Blue</option>
-			<option value={Theme.ORANGE}>Orange</option>
-			<option value={Theme.PURPLE}>Purple</option>
-		</select>
+		<div className={classNames(cls.ThemeSwitcher, {}, [className])}>
+			<select name="theme" id="theme" onChange={setNewTheme} value={theme}>
+				<option value={Theme.ORIGINAL}>Original</option>
+				<option value={Theme.DARK}>Dark</option>
+				<option value={Theme.BLUE}>Blue</option>
+				<option value={Theme.ORANGE}>Orange</option>
+				<option value={Theme.PURPLE}>Purple</option>
+			</select>
+		</div>
 	);
 };
 
