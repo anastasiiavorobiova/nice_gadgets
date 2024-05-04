@@ -1,0 +1,23 @@
+.Button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 40px;
+	cursor: pointer;
+	border: none;
+	outline: none;
+}
+
+.text {
+	padding: 0;
+	margin: 0;
+	color: var(--active-nav-link);
+	background: none;
+}
+
+.primary {
+	min-width: 175px;
+	background-color: var(--accent);
+	color: var(--white);
+	border-radius: var(--btn-border-radius);
+}
