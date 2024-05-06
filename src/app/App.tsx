@@ -2,6 +2,7 @@ import { Suspense } from 'react';
 import { AppRouter } from './providers/router';
 import { useTheme } from '@/app/providers/ThemeProvider';
 import { Navbar } from '@/widgets/Navbar';
+import { SideBar } from '@/widgets/SideBar';
 import { classNames } from '@/shared/lib/classNames/classNames';
 
 import './styles/index.scss';
@@ -15,7 +16,7 @@ export const App = () => {
 				<Navbar />
 				<div className="content-page">
 					<AppRouter />
-					<aside></aside>
+					<SideBar />
 				</div>
 				<footer></footer>
 			</Suspense>

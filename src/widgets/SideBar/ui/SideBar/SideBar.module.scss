@@ -1,7 +1,18 @@
 .SideBar {
+	position: fixed;
+	top: calc(var(--navbar-height) + 1px);
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
 	height: calc(100vh - var(--navbar-height));
 	width: 100vw;
 	background-color: var(--background);
+	display: none;
+}
+
+.navLink {
+	margin: 0 auto;
+	width: fit-content;
 }
 
 .collapsed {

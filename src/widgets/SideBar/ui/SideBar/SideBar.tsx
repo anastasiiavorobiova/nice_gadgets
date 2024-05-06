@@ -1,5 +1,7 @@
 import { FC, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
+import AppLink from '@/shared/ui/AppLink/AppLink';
 import * as cls from './SideBar.module.scss';
 
 interface SideBarProps {
@@ -8,17 +10,21 @@ interface SideBarProps {
 
 export const SideBar: FC<SideBarProps> = ({ className }) => {
 	const [collapsed] = useState(false);
+	const { t: translate } = useTranslation();
 
 	return (
-		<div
+		<aside
 			className={classNames(cls.SideBar, { [cls.collapsed]: collapsed }, [
 				className,
 			])}
 		>
-			SideBar
-			<br />
-			<br />
-		</div>
+			<AppLink to={'/'} className={cls.navLink}>
+				{translate('navigation.home')}
+			</AppLink>
+			<AppLink to={'/category'} className={cls.navLink}>
+				{translate('navigation.category')}
+			</AppLink>
+		</aside>
 	);
 };
 
