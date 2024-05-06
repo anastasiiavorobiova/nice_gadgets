@@ -1,5 +1,12 @@
+import { useTranslation } from 'react-i18next';
+
 const Favourites = () => {
-	return <div>Favourites</div>;
+	const { t: translate } = useTranslation('favourites');
+	return (
+		<div>
+			<h1>{translate('favourites')}</h1>
+		</div>
+	);
 };
 
 export default Favourites;

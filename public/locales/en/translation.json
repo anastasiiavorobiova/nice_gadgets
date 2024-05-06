@@ -1,7 +1,7 @@
 {
-	"test": "Click me!",
 	"navigation": {
 		"home": "home",
 		"category": "category"
-	}
+	},
+	"lang": "eng"
 }

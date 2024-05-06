@@ -5,7 +5,7 @@ import AppLink from '@/shared/ui/AppLink/AppLink';
 import Logo, { LogoTheme } from '@/shared/ui/Logo/Logo';
 import { useTheme, Theme } from '@/app/providers/ThemeProvider';
 import { ThemeSwitcher } from '@/widgets/ThemeSwitcher';
-import Button from '@/shared/ui/Button/Button';
+import { LanguageSwitcher } from '@/widgets/LanguageSwitcher';
 import CartIcon from '@/shared/assets/icons/Cart.svg';
 import CartIconDark from '@/shared/assets/icons/Cart-dark.svg';
 import FavouritesIcon from '@/shared/assets/icons/Favourites.svg';
@@ -18,11 +18,7 @@ interface NavbarProps {
 
 export const Navbar: FC<NavbarProps> = ({ className }) => {
 	const { theme } = useTheme();
-	const { t: translate, i18n } = useTranslation();
-
-	const toggleLanguage = () => {
-		i18n.changeLanguage(i18n.language === 'ua' ? 'en' : 'ua');
-	};
+	const { t: translate } = useTranslation();
 
 	return (
 		<div className={classNames(cls.Navbar, {}, [className])}>
@@ -36,9 +32,7 @@ export const Navbar: FC<NavbarProps> = ({ className }) => {
 				<div className={cls.Main}>
 					{/* <MenuIcon/> */}
 					<div className={cls.border}>
-						<Button onClick={toggleLanguage} className={cls.icon}>
-							{i18n.language}
-						</Button>
+						<LanguageSwitcher className={cls.icon} />
 					</div>
 					<div className={cls.border}>
 						<ThemeSwitcher className={cls.icon} />
