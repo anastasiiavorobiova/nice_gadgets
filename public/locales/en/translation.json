@@ -3,5 +3,10 @@
 		"home": "home",
 		"category": "category"
 	},
-	"lang": "eng"
+	"lang": "eng",
+	"original": "Original",
+	"dark": "Dark",
+	"blue": "Blue",
+	"orange": "Orange",
+	"purple": "Purple"
 }

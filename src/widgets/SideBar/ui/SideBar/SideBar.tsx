@@ -9,7 +9,7 @@ interface SideBarProps {
 }
 
 export const SideBar: FC<SideBarProps> = ({ className }) => {
-	const [collapsed] = useState(false);
+	const [collapsed] = useState(true);
 	const { t: translate } = useTranslation();
 
 	return (
