@@ -2,8 +2,6 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import { FC } from 'react';
 import { Theme, useTheme } from '@/app/providers/ThemeProvider';
 
-import * as cls from './ThemeSwitcher.module.scss';
-
 interface ThemeSwitcher {
 	className?: string;
 }
@@ -16,7 +14,7 @@ export const ThemeSwitcher: FC<ThemeSwitcher> = ({ className }) => {
 	};
 
 	return (
-		<div className={classNames(cls.ThemeSwitcher, {}, [className])}>
+		<div className={classNames('', {}, [className])}>
 			<select name="theme" id="theme" onChange={setNewTheme} value={theme}>
 				<option value={Theme.ORIGINAL}>Original</option>
 				<option value={Theme.DARK}>Dark</option>

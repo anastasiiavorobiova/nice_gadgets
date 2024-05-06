@@ -11,7 +11,7 @@
 	color: var(--secondary);
 	transition: all 300ms;
 
-	&:after {
+	&::after {
 		content: '';
 		position: absolute;
 		bottom: 0;
@@ -26,7 +26,7 @@
 .AppLink.active {
 	color: var(--active-nav-link);
 
-	&:after {
+	&::after {
 		min-width: 100%;
 	}
 }
