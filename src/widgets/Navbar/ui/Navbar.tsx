@@ -21,7 +21,7 @@ export const Navbar: FC<NavbarProps> = ({ className }) => {
 	const { t: translate } = useTranslation();
 
 	return (
-		<div className={classNames(cls.Navbar, {}, [className])}>
+		<header className={classNames(cls.Navbar, {}, [className])}>
 			{theme === Theme.DARK ? <Logo theme={LogoTheme.DARK} /> : <Logo />}
 
 			<nav className={cls.NavLinks}>
@@ -55,7 +55,7 @@ export const Navbar: FC<NavbarProps> = ({ className }) => {
 					</div>
 				</div>
 			</nav>
-		</div>
+		</header>
 	);
 };
 

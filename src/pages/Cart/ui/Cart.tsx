@@ -5,10 +5,10 @@ const Cart = () => {
 	const { t: translate } = useTranslation('cart');
 
 	return (
-		<div>
+		<main>
 			<h1>{translate('cart')}</h1>
 			<Button theme={ThemeButton.PRIMARY}>{translate('checkout')}</Button>
-		</div>
+		</main>
 	);
 };
 

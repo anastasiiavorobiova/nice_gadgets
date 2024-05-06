@@ -13,3 +13,7 @@
 	background: var(--background);
 	min-height: 100vh;
 }
+
+.content-page {
+	min-height: calc(100vh - var(--navbar-height) - var(--footer-height));
+}

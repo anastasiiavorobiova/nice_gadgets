@@ -3,9 +3,9 @@ import { useTranslation } from 'react-i18next';
 const Favourites = () => {
 	const { t: translate } = useTranslation('favourites');
 	return (
-		<div>
+		<main>
 			<h1>{translate('favourites')}</h1>
-		</div>
+		</main>
 	);
 };
 

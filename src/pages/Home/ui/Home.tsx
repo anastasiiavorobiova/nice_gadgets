@@ -4,9 +4,9 @@ const Home = () => {
 	const { t: translate } = useTranslation('home');
 
 	return (
-		<div>
+		<main>
 			<h1>{translate('welcome')}</h1>
-		</div>
+		</main>
 	);
 };
 
