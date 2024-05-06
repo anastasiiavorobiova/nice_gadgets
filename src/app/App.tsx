@@ -1,5 +1,4 @@
 import { Suspense } from 'react';
-import { Outlet } from 'react-router-dom';
 import { AppRouter } from './providers/router';
 import { useTheme } from '@/app/providers/ThemeProvider';
 import { Navbar } from '@/widgets/Navbar';

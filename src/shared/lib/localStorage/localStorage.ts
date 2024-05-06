@@ -26,9 +26,7 @@ const _ls = (key: string) => {
 			localStorage.removeItem(key);
 			window.dispatchEvent(new StorageEvent('storage', { key }));
 		},
-		listen: <D = any>(
-			callback: (value: D | null | string) => void
-		): (() => void) => {
+		listen: <D>(callback: (value: D | null | string) => void): (() => void) => {
 			const listener = (event: StorageEvent) => {
 				if (event.key === key || event.key === null) {
 					try {

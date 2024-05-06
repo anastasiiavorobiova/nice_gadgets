@@ -7,7 +7,7 @@ interface SideBarProps {
 }
 
 export const SideBar: FC<SideBarProps> = ({ className }) => {
-	const [collapsed, setCollapsed] = useState(false);
+	const [collapsed] = useState(false);
 
 	return (
 		<div

@@ -8,7 +8,7 @@ export function classNames(
 	return [
 		cls.trim(),
 		Object.entries(mods)
-			.filter(([_, value]) => Boolean(value))
+			.filter(([_key, value]) => Boolean(value))
 			.map(([className]) => className.trim()),
 		additional
 			.filter(Boolean)
