@@ -1,9 +1,11 @@
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { FC } from 'react';
+import { useTranslation } from 'react-i18next';
 import AppLink from '@/shared/ui/AppLink/AppLink';
 import Logo, { LogoTheme } from '@/shared/ui/Logo/Logo';
 import { useTheme, Theme } from '@/app/providers/ThemeProvider';
 import { ThemeSwitcher } from '@/widgets/ThemeSwitcher';
+import Button from '@/shared/ui/Button/Button';
 import CartIcon from '@/shared/assets/icons/Cart.svg';
 import CartIconDark from '@/shared/assets/icons/Cart-dark.svg';
 import FavouritesIcon from '@/shared/assets/icons/Favourites.svg';
@@ -16,6 +18,11 @@ interface NavbarProps {
 
 export const Navbar: FC<NavbarProps> = ({ className }) => {
 	const { theme } = useTheme();
+	const { t: translate, i18n } = useTranslation();
+
+	const toggleLanguage = () => {
+		i18n.changeLanguage(i18n.language === 'ua' ? 'en' : 'ua');
+	};
 
 	return (
 		<div className={classNames(cls.Navbar, {}, [className])}>
@@ -23,18 +30,35 @@ export const Navbar: FC<NavbarProps> = ({ className }) => {
 
 			<nav className={cls.NavLinks}>
 				<div className={cls.Shop}>
-					<AppLink to={'/'}>Home</AppLink>
-					<AppLink to={'/category'}>Category</AppLink>
+					<AppLink to={'/'}>{translate('navigation.home')}</AppLink>
+					<AppLink to={'/category'}>{translate('navigation.category')}</AppLink>
 				</div>
 				<div className={cls.Main}>
 					{/* <MenuIcon/> */}
-					<ThemeSwitcher className={cls.icon} />
-					<AppLink to={'/cart'} className={cls.icon}>
-						{theme === Theme.DARK ? <CartIconDark /> : <CartIcon />}
-					</AppLink>
-					<AppLink to={'/favourites'} className={cls.icon}>
-						{theme === Theme.DARK ? <FavouritesIconDark /> : <FavouritesIcon />}
-					</AppLink>
+					<div className={cls.border}>
+						<Button onClick={toggleLanguage} className={cls.icon}>
+							{i18n.language}
+						</Button>
+					</div>
+					<div className={cls.border}>
+						<ThemeSwitcher className={cls.icon} />
+					</div>
+
+					<div className={cls.border}>
+						<AppLink to={'/cart'} className={cls.icon}>
+							{theme === Theme.DARK ? <CartIconDark /> : <CartIcon />}
+						</AppLink>
+					</div>
+
+					<div className={cls.border}>
+						<AppLink to={'/favourites'} className={cls.icon}>
+							{theme === Theme.DARK ? (
+								<FavouritesIconDark />
+							) : (
+								<FavouritesIcon />
+							)}
+						</AppLink>
+					</div>
 				</div>
 			</nav>
 		</div>

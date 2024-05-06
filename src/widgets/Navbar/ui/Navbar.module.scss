@@ -21,9 +21,15 @@
 	display: flex;
 }
 
+.border {
+	border-left: 1px solid var(--elements);
+}
+
 .icon {
 	display: inline-flex;
 	align-items: center;
+	height: var(--navbar-height);
 	padding: 0 24px;
-	border-left: 1px solid var(--elements);
+	text-transform: uppercase;
+	color: var(--active-nav-link);
 }
