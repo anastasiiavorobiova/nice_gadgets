@@ -1,0 +1,16 @@
+.PageError {
+	--accent: #313237;
+	--white: #fff;
+	--btn-border-radius: none;
+
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.message {
+	font: var(--font-h1);
+}

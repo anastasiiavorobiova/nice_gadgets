@@ -9,5 +9,8 @@
 	"blue": "Blue",
 	"orange": "Orange",
 	"purple": "Purple",
-	"The page is not found": "The page is not found"
+	"The page is not found": "The page is not found",
+	"Oops! Something went wrong!": "Oops! Something went wrong!",
+	"Reload the page": "Reload the page",
+	"Bug": "Bug"
 }

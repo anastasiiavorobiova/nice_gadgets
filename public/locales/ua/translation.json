@@ -9,5 +9,8 @@
 	"blue": "Блакитна",
 	"orange": "Оранжева",
 	"purple": "Фіолетова",
-	"The page is not found": "Сторінку не знайдено"
+	"The page is not found": "Сторінку не знайдено",
+	"Oops! Something went wrong!": "Ой! Щось пішло не так!",
+	"Reload the page": "Перезавантажити сторінку",
+	"Bug": "Баг"
 }
