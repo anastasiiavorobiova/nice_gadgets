@@ -40,6 +40,7 @@ describe('classNames', () => {
 		const arr = ['   cls4 ', ' cls5   '];
 
 		expect(classNames(addedClass, mods, arr)).toBe('cls1 cls2 cls3 cls4 cls5');
+		expect(classNames(addedClass, {}, arr)).toBe('cls1 cls2 cls4 cls5');
 	});
 
 	test('Return empty string', () => {

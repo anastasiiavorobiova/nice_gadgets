@@ -17,6 +17,7 @@ export function classNames(
 			.join(' ')
 			.trim(),
 	]
+		.filter(Boolean)
 		.join(' ')
 		.trim();
 }
