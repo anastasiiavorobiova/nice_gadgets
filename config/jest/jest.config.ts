@@ -49,7 +49,18 @@ const config: Config = {
 
 	moduleNameMapper: {
 		'^@/(.*)$': '<rootDir>/src/$1',
+		'\\.(svg|jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
+			'<rootDir>config/jest/jestEmptyComponent.ts',
+		'\\.(css|scss)$': '<rootDir>config/jest/identity-obj-proxy-esm.ts',
 	},
+
+	transform: {
+		'\\.[jt]sx?$': 'babel-jest',
+		'\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
+			'<rootDir>config/jest/fileTransformer.ts',
+	},
+
+	setupFilesAfterEnv: ['<rootDir>config/jest/setupTests.ts'],
 
 	// Indicates whether the coverage information should be collected while executing the test
 	// collectCoverage: false,

@@ -2,7 +2,7 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 import AppLink from '@/shared/ui/AppLink/AppLink';
-import Logo, { LogoTheme } from '@/shared/ui/Logo/Logo';
+import { Logo, LogoTheme } from '@/shared/ui/Logo';
 import { useTheme, Theme } from '@/app/providers/ThemeProvider';
 import { ThemeSwitcher } from '@/widgets/ThemeSwitcher';
 import { LanguageSwitcher } from '@/widgets/LanguageSwitcher';

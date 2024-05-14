@@ -30,6 +30,9 @@ export function buildLoaders({ isDev }: BuildOptions): RuleSetRule[] {
 					},
 				},
 			},
+			{
+				loader: 'sass-loader',
+			},
 		],
 	};
 

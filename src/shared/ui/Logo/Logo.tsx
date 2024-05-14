@@ -1,23 +1,18 @@
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
-import LogoIconLight from '@/shared/assets/icons/Logo.svg';
-import LogoIconDark from '@/shared/assets/icons/Logo-dark.svg';
-
+import { IconMap, LogoTheme } from './IconMap';
 import * as cls from './Logo.module.scss';
-
-export enum LogoTheme {
-	LIGHT = 'light',
-	DARK = 'dark',
-}
 
 interface LogoProps {
 	theme?: LogoTheme;
 }
 
-const Logo: FC<LogoProps> = ({ theme = LogoTheme.LIGHT }) => {
+export const Logo: FC<LogoProps> = ({ theme = LogoTheme.LIGHT }) => {
+	const Icon = IconMap[theme];
+
 	return (
-		<Link to="/" className={cls.Logo}>
-			{theme === LogoTheme.LIGHT ? <LogoIconLight /> : <LogoIconDark />}
+		<Link to="/" className={cls.Logo} data-testid="logo">
+			<Icon />
 		</Link>
 	);
 };
