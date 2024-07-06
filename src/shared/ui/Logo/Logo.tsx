@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
 import { Link } from 'react-router-dom';
 import { IconMap, LogoTheme } from './IconMap';
 import * as cls from './Logo.module.scss';

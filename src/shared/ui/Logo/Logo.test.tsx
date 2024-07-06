@@ -6,12 +6,9 @@ describe('Logo', () => {
 	test('In the document', () => {
 		render(
 			<MemoryRouter>
-				<svg>
-					<Logo />
-				</svg>
+				<Logo />
 			</MemoryRouter>
 		);
-
 		expect(screen.getByTestId('logo')).toBeInTheDocument();
 	});
 });

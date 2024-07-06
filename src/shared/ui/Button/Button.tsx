@@ -1,9 +1,12 @@
+import React from 'react';
 import { ButtonHTMLAttributes, FC } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import * as cls from './Button.module.scss';
 
 export enum ThemeButton {
 	PRIMARY = 'primary',
+	SECONDARY = 'secondary',
+	NEUTRAL = 'neutral',
 	UNSTYLED = 'unstyled',
 }
 

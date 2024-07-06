@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { Button, ThemeButton } from '@/shared/ui/Button/Button';
+import * as cls from './Button.module.scss';
 
 describe('Button', () => {
 	test('In the document', () => {
@@ -9,20 +10,31 @@ describe('Button', () => {
 	});
 
 	test('Have primary theme', () => {
-		render(<Button theme={ThemeButton.PRIMARY}>TEST</Button>);
+		render(
+			<Button theme={ThemeButton.PRIMARY} className={cls[ThemeButton.PRIMARY]}>
+				TEST
+			</Button>
+		);
+		expect(screen.getByTestId('button')).toHaveClass(cls[ThemeButton.PRIMARY]);
+	});
 
-		expect(screen.getByTestId('button')).toHaveClass('primary');
+	test('Have secondary theme', () => {
+		render(<Button theme={ThemeButton.SECONDARY}>TEST</Button>);
+		expect(screen.getByTestId('button')).toHaveClass('secondary');
+	});
+
+	test('Have neutral theme', () => {
+		render(<Button theme={ThemeButton.NEUTRAL}>TEST</Button>);
+		expect(screen.getByTestId('button')).toHaveClass('neutral');
 	});
 
 	test('Have unstyled theme', () => {
 		render(<Button theme={ThemeButton.UNSTYLED}>TEST</Button>);
-
 		expect(screen.getByTestId('button')).toHaveClass('unstyled');
 	});
 
 	test('Additional class could be added', () => {
 		render(<Button className="test">TEST</Button>);
-
 		expect(screen.getByTestId('button')).toHaveClass('test');
 	});
 });

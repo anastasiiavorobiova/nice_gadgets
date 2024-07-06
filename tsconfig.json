@@ -21,6 +21,11 @@
 			"module": "CommonJS"
 		}
 	},
-	"include": ["src", "src/app/types/global.d.ts", "config/jest/setupTests.ts"],
+	"include": [
+		"src",
+		"src/app/types/global.d.ts",
+		"./config/jest/setupTests.ts",
+		"src/**/*.tsx"
+	],
 	"exclude": ["node_modules", "dist"]
 }

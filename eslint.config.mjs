@@ -4,9 +4,23 @@ import tseslint from 'typescript-eslint';
 import i18next from 'eslint-plugin-i18next';
 import pluginReactConfig from 'eslint-plugin-react/configs/recommended.js';
 
+const customGlobals = {
+	jest: true,
+};
+
 export default [
 	{ files: ['**/*.js'], languageOptions: { sourceType: 'commonjs' } },
-	{ languageOptions: { globals: globals.browser } },
+	{
+		languageOptions: {
+			globals: {
+				...customGlobals,
+				...globals.browser,
+			},
+			parserOptions: {
+				sourceType: 'module',
+			},
+		},
+	},
 	pluginJs.configs.recommended,
 	...tseslint.configs.recommended,
 	pluginReactConfig,
