@@ -9,9 +9,42 @@
 	--white: #fff;
 	--green: #27ae60;
 	--red: #eb5757;
+	--transparent: transparent;
+
 	--background: var(--white);
+
 	--text-heading: var(--primary);
 	--text-body: var(--secondary);
+
 	--active-nav-link: var(--primary);
+
 	--btn-border-radius: none;
+	--btn-shadow: 0px 3px 13px 0px #17203166;
+	--btn-bg-hover: var(--accent);
+	--btn-bg-active: var(--white);
+	--btn-color-active: var(--green);
+	--btn-border-active: var(--elements);
+
+	--btn-bg-secondary: var(--transparent);
+	--btn-color-secondary: #000;
+	--btn-border-secondary: var(--elements);
+	--btn-border-secondary-hover: var(--accent);
+	--btn-bg-secondary-hover: var(--transparent);
+	--btn-border-secondary-active: var(--accent);
+	--btn-bg-secondary-active: var(--accent);
+	--btn-color-secondary-active: var(--white);
+	--btn-secondary-border-radius: none;
+
+	--btn-bg-neutral: var(--transparent);
+	--btn-color-neutral: #000;
+	--btn-border-neutral: var(--icons);
+	--btn-border-neutral-hover: var(--accent);
+	--btn-bg-neutral-hover: var(--transparent);
+	--btn-border-neutral-active: var(--elements);
+	--btn-bg-neutral-active: var(--transparent);
+	--btn-color-neutral-active: var(--icons);
+	--btn-neutral-border-radius: none;
+
+	--btn-color-unstyled: var(--secondary);
+	--btn-color-unstyled-hover: var(--primary);
 }

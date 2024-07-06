@@ -9,9 +9,43 @@
 	--white: #f1f2f9;
 	--green: #27ae60;
 	--red: #eb5757;
+	--transparent: transparent;
+	--deep-dark: #161827;
+
 	--background: var(--hover-bg);
+
 	--text-heading: var(--white);
 	--text-body: var(--secondary);
+
 	--active-nav-link: var(--white);
+
 	--btn-border-radius: none;
+	--btn-shadow: none;
+	--btn-bg-hover: #a378ff;
+	--btn-bg-active: #323542;
+	--btn-color-active: var(--white);
+	--btn-border-active: var(--transparent);
+
+	--btn-bg-secondary: var(--deep-dark);
+	--btn-color-secondary: var(--white);
+	--btn-border-secondary: var(--deep-dark);
+	--btn-border-secondary-hover: var(--elements);
+	--btn-bg-secondary-hover: var(--elements);
+	--btn-border-secondary-active: var(--accent);
+	--btn-bg-secondary-active: var(--accent);
+	--btn-color-secondary-active: var(--white);
+	--btn-secondary-border-radius: none;
+
+	--btn-bg-neutral: var(--btn-bg-active);
+	--btn-color-neutral: var(--white);
+	--btn-border-neutral: var(--btn-bg-active);
+	--btn-border-neutral-hover: var(--icons);
+	--btn-bg-neutral-hover: var(--icons);
+	--btn-border-neutral-active: var(--elements);
+	--btn-bg-neutral-active: var(--transparent);
+	--btn-color-neutral-active: var(--icons);
+	--btn-neutral-border-radius: none;
+
+	--btn-color-unstyled: var(--white);
+	--btn-color-unstyled-hover: var(--accent);
 }

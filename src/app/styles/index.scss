@@ -11,7 +11,18 @@
 	font: var(--font-body);
 	color: var(--text-body);
 	background: var(--background);
+}
+
+.container {
 	min-height: 100vh;
+}
+
+.wrapper {
+	min-height: 300px;
+	min-width: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .content-page {
